@@ -1,4 +1,4 @@
-function professional_TrAQ_OFT(varargin)
+function OFT(varargin)
 % Robust TrAQ Open Field Analysis: Locomotion + Zones (Peripheral/Central)
 %
 % This script provides a comprehensive analysis of open field test data,
@@ -6,7 +6,7 @@ function professional_TrAQ_OFT(varargin)
 % It is designed to be robust, configurable, and easy to use.
 %
 % Usage:
-%   professional_TrAQ_OFT('dataFile', 'Out_Stim2.mat', 'arena_cm', 70, 'peripheral_width_cm', 10)
+%   OFT('dataFile', 'Out_Stim2.mat', 'arena_cm', 70, 'peripheral_width_cm', 10)
 %
 % Parameters:
 %   'dataFile' (char) - Name of the .mat file to load (default: 'Out_Stim2.mat')
@@ -17,7 +17,7 @@ function professional_TrAQ_OFT(varargin)
 %   'histogram_bins' (numeric) - Number of bins for histograms (default: 40)
 %
 % Example:
-%   professional_TrAQ_OFT('dataFile', 'my_tracking_data.mat', 'arena_cm', 50);
+%   OFT('dataFile', 'my_tracking_data.mat', 'arena_cm', 50);
 
     %% --- Configuration ---
     config = parse_inputs(varargin{:});
